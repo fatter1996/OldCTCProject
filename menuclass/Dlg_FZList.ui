@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DLG_FZList</class>
+ <widget class="QDialog" name="DLG_FZList">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>160</width>
+    <height>267</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    股道无电</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>38</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    接触网定位无电</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>114</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    尖轨故障</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>76</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    接触网反位无电</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>152</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    心轨故障</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_7">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>228</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    退出菜单</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_6">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>190</y>
+     <width>162</width>
+     <height>40</height>
+    </rect>
+   </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(0, 0, 251);color:rgb(255, 255, 255);}
+QPushButton:pressed{background-color: rgb(0, 0, 251);border-style:inset;color:rgb(255, 255, 255);}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}
+QPushButton{background-color: rgb(255, 255, 255);}
+QPushButton{border-color: rgb(255, 255, 255)}
+QPushButton{font:bold 14px;}</string>
+   </property>
+   <property name="text">
+    <string>    破封统计</string>
+   </property>
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="autoRepeat">
+    <bool>false</bool>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

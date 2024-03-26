@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PoorShuntDlg</class>
+ <widget class="QWidget" name="PoorShuntDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>345</width>
+    <height>196</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>设置分路不良窗口</string>
+  </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>19</x>
+     <y>32</y>
+     <width>48</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>信号设备</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>83</x>
+     <y>32</y>
+     <width>113</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit_2">
+   <property name="geometry">
+    <rect>
+     <x>212</x>
+     <y>32</y>
+     <width>114</width>
+     <height>20</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>81</y>
+     <width>221</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>选择类型</string>
+   </property>
+   <widget class="QCheckBox" name="checkBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>25</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>分路不良</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_2">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>25</y>
+      <width>95</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>岔前分路不良</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>95</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>定位分路不良</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_4">
+    <property name="geometry">
+     <rect>
+      <x>119</x>
+      <y>50</y>
+      <width>95</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>反位分路不良</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>251</x>
+     <y>83</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(240, 240, 240);}
+QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(229, 241, 251);color:black}
+QPushButton:pressed{background-color: rgb(204, 228, 247);border-style:inset}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}</string>
+   </property>
+   <property name="text">
+    <string>确定</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>251</x>
+     <y>139</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{background-color: rgb(240, 240, 240);}
+QPushButton{border:1px groove gray;border-radius:4px;padding:2px 4px;border-style:outset;}
+QPushButton:hover{background-color: rgb(229, 241, 251);color:black}
+QPushButton:pressed{background-color: rgb(204, 228, 247);border-style:inset}
+QPushButton{background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(220, 220, 220, 255), stop:1 rgba(250, 250, 250, 255));}</string>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <zorder>groupBox</zorder>
+  <zorder>label</zorder>
+  <zorder>lineEdit</zorder>
+  <zorder>lineEdit_2</zorder>
+  <zorder>pushButton</zorder>
+  <zorder>pushButton_2</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

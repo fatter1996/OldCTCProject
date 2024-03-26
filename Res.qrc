@@ -1,0 +1,44 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Res/toolbar1/1.png</file>
+        <file>Res/toolbar1/2.png</file>
+        <file>Res/toolbar1/3.png</file>
+        <file>Res/toolbar1/4.png</file>
+        <file>Res/toolbar1/5.png</file>
+        <file>Res/toolbar1/6.png</file>
+        <file>Res/toolbar1/7.png</file>
+        <file>Res/toolbar1/8.png</file>
+        <file>Res/toolbar1/9.png</file>
+        <file>Res/toolbar1/10.png</file>
+        <file>Res/toolbar1/11.png</file>
+        <file>Res/toolbar1/12.png</file>
+        <file>Res/toolbar1/13.png</file>
+        <file>Res/toolbar1/14.png</file>
+        <file>Res/toolbar1/15.png</file>
+        <file>Res/toolbar1/16.png</file>
+        <file>Res/toolbar1/17.png</file>
+        <file>Res/toolbar1/18.png</file>
+        <file>Res/toolbar2/帮助.png</file>
+        <file>Res/toolbar2/查找.png</file>
+        <file>Res/toolbar2/打印.png</file>
+        <file>Res/toolbar2/调车作业单.png</file>
+        <file>Res/toolbar2/会让计划.png</file>
+        <file>Res/toolbar2/历史运统.png</file>
+        <file>Res/toolbar2/临站同意发车.png</file>
+        <file>Res/toolbar2/视图.png</file>
+        <file>Res/toolbar2/添加列车.png</file>
+        <file>Res/toolbar2/添加用户.png</file>
+        <file>Res/toolbar2/同意临站发车.png</file>
+        <file>Res/toolbar2/图标转换.png</file>
+        <file>Res/toolbar2/显示上下行车.png</file>
+        <file>Res/toolbar2/显示上行车.png</file>
+        <file>Res/toolbar2/显示下行车.png</file>
+        <file>Res/toolbar2/预览.png</file>
+        <file>Res/toolbar2/站场图切换.png</file>
+        <file>Res/trainHand.png</file>
+        <file>Res/mouseEnlarge.png</file>
+        <file>Res/mouseNarrow.png</file>
+        <file>Res/toolbar1/19.png</file>
+        <file>Res/CTC.png</file>
+    </qresource>
+</RCC>

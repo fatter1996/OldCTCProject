@@ -1,0 +1,1232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>NewTraffclogWidget</class>
+ <widget class="QWidget" name="NewTraffclogWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>720</width>
+    <height>410</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	padding-left: 8px;
+	border-top:2px inset rgb(180, 180, 180);
+	border-left:2px inset rgb(180, 180, 180);
+	border-bottom:2px inset rgb(240, 240, 240);
+	border-right:2px inset rgb(240, 240, 240);
+}
+
+QLineEdit:!enabled{
+	background-color: rgb(240, 240, 240);
+	padding-left: 8px;
+	border-top:2px inset rgb(180, 180, 180);
+	border-left:2px inset rgb(180, 180, 180);
+	border-bottom:2px inset rgb(240, 240, 240);
+	border-right:2px inset rgb(240, 240, 240);
+}
+
+QComboBox{
+	background-color: rgb(255, 255, 255);
+	padding-left: 8px;
+	border-top:2px inset rgb(180, 180, 180);
+	border-left:2px inset rgb(180, 180, 180);
+	border-bottom:2px inset rgb(240, 240, 240);
+	border-right:2px inset rgb(240, 240, 240);
+}
+
+QComboBox:!enabled{
+	background-color: rgb(240, 240, 240);
+	padding-left: 8px;
+	border-top:2px inset rgb(180, 180, 180);
+	border-left:2px inset rgb(180, 180, 180);
+	border-bottom:2px inset rgb(240, 240, 240);
+	border-right:2px inset rgb(240, 240, 240);
+}
+
+QDateTimeEdit{
+	background-color: rgb(255, 255, 255);
+	padding-left: 8px;
+	border-top:2px inset rgb(180, 180, 180);
+	border-left:2px inset rgb(180, 180, 180);
+	border-bottom:2px inset rgb(240, 240, 240);
+	border-right:2px inset rgb(240, 240, 240);
+}
+
+QDateTimeEdit:!enabled{
+	background-color: rgb(240, 240, 240);
+	padding-left: 8px;
+	border-top:2px inset rgb(180, 180, 180);
+	border-left:2px inset rgb(180, 180, 180);
+	border-bottom:2px inset rgb(240, 240, 240);
+	border-right:2px inset rgb(240, 240, 240);
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_3">
+   <property name="spacing">
+    <number>8</number>
+   </property>
+   <property name="leftMargin">
+    <number>24</number>
+   </property>
+   <property name="topMargin">
+    <number>24</number>
+   </property>
+   <property name="rightMargin">
+    <number>24</number>
+   </property>
+   <property name="bottomMargin">
+    <number>16</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="spacing">
+      <number>8</number>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>72</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>72</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>车站</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="stationNameCombo">
+       <property name="minimumSize">
+        <size>
+         <width>96</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>96</width>
+         <height>24</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_13">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,0,0">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <property name="sizeConstraint">
+          <enum>QLayout::SetDefaultConstraint</enum>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>到达车次</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="arriveTrainNoLabel">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_24">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>列车类型</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="trainTypeCombo">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton">
+           <property name="minimumSize">
+            <size>
+             <width>94</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>94</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>匹配类型</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_13">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_15" stretch="0,0,0">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>到达超限</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="arrivalOverdueComboBox">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>正常</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>一级超限</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>二级超限</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>三级超限</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>超级超限</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_22">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>接车口</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="wayInCombo">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_10">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>来向车站</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="previousStationCombo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_21">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_12">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>接车股道</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="receivingTrackCombo">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_11">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_31">
+         <item>
+          <widget class="QLabel" name="label_14">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>到达时间</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateTimeEdit" name="arrivalTimeEdit">
+           <property name="minimumSize">
+            <size>
+             <width>172</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>172</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy年MM月dd日 HH:mm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="originationCheck">
+           <property name="minimumSize">
+            <size>
+             <width>64</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>64</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>始发</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_14">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <property name="spacing">
+        <number>8</number>
+       </property>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>出发车次</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="setOutTrainNoLabel">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_23">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>运行类型</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="operationTypeCombo">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>出发超限</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="departOverdueComboBox">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <item>
+            <property name="text">
+             <string>正常</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>一级超限</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>二级超限</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>三级超限</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>超级超限</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_7">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_18">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>发车口</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="wayOutCombo">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_8">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_20">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_11">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>去向车站</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="nextStationCombo">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_9">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_22">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_13">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>发车股道</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="departureTrackCombo">
+           <property name="minimumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>140</width>
+             <height>24</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <property name="spacing">
+          <number>8</number>
+         </property>
+         <item>
+          <widget class="QLabel" name="label_15">
+           <property name="minimumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>72</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>出发时间</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateTimeEdit" name="departureTimeEdit">
+           <property name="minimumSize">
+            <size>
+             <width>172</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>172</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>Arial</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="displayFormat">
+            <string>yyyy年MM月dd日 HH:mm</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="finalArrivalCheck">
+           <property name="minimumSize">
+            <size>
+             <width>64</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>64</width>
+             <height>24</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>终到</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_15">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_9">
+     <item>
+      <widget class="QCheckBox" name="electricCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>电力</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="passengerCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>办理客运</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="importantCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>重点列车</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="armyCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>军运</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_10">
+     <item>
+      <widget class="QCheckBox" name="agreeTrackCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>允许股道与基本径路不一致</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QCheckBox" name="agreeWayCheck">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>允许出入口与基本径路不一致</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_11">
+     <item>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="minimumSize">
+        <size>
+         <width>72</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>72</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>确定</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="minimumSize">
+        <size>
+         <width>72</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>72</width>
+         <height>24</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>取消</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

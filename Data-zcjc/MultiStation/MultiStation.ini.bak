@@ -1,0 +1,18 @@
+[MultiStationDisp]
+Num=2
+
+[Station1]
+ID=1
+Name=标准站
+Range=@Rect(14 0 1500 500)
+IsOverturn=0
+OffSetPt=@Point(0 0)
+Factor=0.75
+
+[Station2]
+ID=2
+Name=标准站2
+Range=@Rect(958 1115 1560 950)
+IsOverturn=0
+OffSetPt=@Point(0 0)
+Factor=0.75

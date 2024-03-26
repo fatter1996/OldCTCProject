@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StationInterfaceKSK</class>
+ <widget class="QMainWindow" name="StationInterfaceKSK">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMenuBar {
+	
+	background-color: rgb(240, 240, 240);
+}
+QMenu::item {
+	padding-left: 24px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: black;
+}
+QMenu::item:!enabled {
+	padding-left: 24px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: gray;
+}
+QMenu::item:selected {
+	padding-left: 24px;
+	padding-right: 16px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: rgb(208, 208, 208);
+}
+
+
+QToolBar {
+	background: rgb(240, 240, 240);
+}
+
+
+QScrollBar:vertical {
+ 	width: 16px;
+}
+
+QScrollBar::handle:vertical {
+	background-color: rgba(160, 160, 160, 240);
+	min-height: 24px;
+	border-radius:1px; 
+	margin: 10px 7px 10px 7px;
+}
+
+QScrollBar::handle:vertical:hover,
+QScrollBar::handle:vertical:pressed {
+	background-color: rgba(160, 160, 160, 240);
+	min-height: 24px;
+ 	border-radius: 3px;
+	margin: 10px 5px 10px 5px;
+}
+
+QScrollBar::sub-page:vertical {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::add-page:vertical {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::sub-line:vertical {
+      border: none;
+}
+
+QScrollBar::add-line:vertical {
+      border: none;
+}
+
+
+QScrollBar:horizontal {
+ 	height: 16px;
+}
+
+QScrollBar::handle:horizontal {
+	background-color: rgba(160, 160, 160, 240);
+	border-radius:1px; 
+	margin: 7px 10px 7px 10px;
+}
+
+QScrollBar::handle:horizontal:hover,
+QScrollBar::handle:horizontal:pressed {
+	background-color: rgba(160, 160, 160, 240);
+ 	border-radius: 3px;
+	margin: 5px 10px 5px 10px;
+}
+
+QScrollBar::sub-page:horizontal {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::add-page:horizontal {
+      background-color: rgb(240, 240, 240);
+}
+
+QScrollBar::sub-line:horizontal  {
+      border: none;
+}
+
+QScrollBar::add-line:horizontal  {
+      border: none;
+}
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="stationWidget" native="true">
+      <property name="minimumSize">
+       <size>
+        <width>400</width>
+        <height>380</height>
+       </size>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>0</number>
+       </property>
+       <property name="leftMargin">
+        <number>0</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>0</number>
+       </property>
+       <property name="bottomMargin">
+        <number>0</number>
+       </property>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QDockWidget" name="dockWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Preferred" vsizetype="Minimum">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="minimumSize">
+    <size>
+     <width>44</width>
+     <height>72</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QDockWidget::title {
+    background: rgb(240, 240, 240);
+}</string>
+   </property>
+   <property name="features">
+    <set>QDockWidget::DockWidgetClosable|QDockWidget::DockWidgetMovable|QDockWidget::DockWidgetVerticalTitleBar</set>
+   </property>
+   <property name="allowedAreas">
+    <set>Qt::AllDockWidgetAreas</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>8</number>
+   </attribute>
+   <widget class="RouteOrderWidget" name="routeOrderDockWinget"/>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>RouteOrderWidget</class>
+   <extends>QWidget</extends>
+   <header location="global">RouteOrder/routeorderwidget.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

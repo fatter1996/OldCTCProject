@@ -1,0 +1,125 @@
+//站名:
+STATIONNAME:湖州高速场;
+//本站ID:
+STATIONID:0x02;
+//本站大小:
+STATIONSIZE:1950|1340;
+//A/B机或多终端的序号，从1开始
+ABNUM:1;
+//信号机灯丝报警状态:0为不报警，1为报警； //与联锁同步
+XHDDSBJ:0;
+//是否有培训软件
+ISHAVEPXRJ:1;
+//控制模式转换是否需要教师机（中心）同意
+CHGMODENEEDJSJ:0;
+//站台定义(高站台1，低站台0；小写u型、小写n型)
+ZHANTAINUM:6;
+ZHANTAI_HIGH1:1;
+ZHANTAI_TYPE1:u;
+ZHANTAI_LENGTH1:130;
+ZHANTAI_POINT1:P(820,270);
+ZHANTAI_HIGH2:1;
+ZHANTAI_TYPE2:n;
+ZHANTAI_LENGTH2:130;
+ZHANTAI_POINT2:P(820,400);
+ZHANTAI_HIGH3:1;
+ZHANTAI_TYPE3:u;
+ZHANTAI_LENGTH3:130;
+ZHANTAI_POINT3:P(820,420);
+ZHANTAI_HIGH4:1;
+ZHANTAI_TYPE4:n;
+ZHANTAI_LENGTH4:130;
+ZHANTAI_POINT4:P(820,640);
+ZHANTAI_HIGH5:1;
+ZHANTAI_TYPE5:u;
+ZHANTAI_LENGTH5:130;
+ZHANTAI_POINT5:P(820,660);
+ZHANTAI_HIGH6:1;
+ZHANTAI_TYPE6:n;
+ZHANTAI_LENGTH6:130;
+ZHANTAI_POINT6:P(820,800);
+//信号楼
+//XINHAOLOU:1|P(800,570)|1;//信号楼显示与否，左上角坐标，是否朝北
+//文本，颜色代码|左上角|文本（颜色：0灭灯,1红,2绿,3白,4黄,5红闪,6绿闪,7白闪,8黄闪,9蓝）
+//TEXT:3|P(15,72)|S;
+//TEXT:3|P(15,642)|SN;
+//TEXT:3|P(1825,72)|XN;
+//TEXT:3|P(1825,462)|X;
+//线条，颜色代码|点1|点2//颜色代码|点1|点2|线宽|线的样式(0为虚线,1为实线)（颜色：0灭灯,1红,2绿,3白,4黄,5红闪,6绿闪,7白闪,8黄闪,9蓝）
+//LINE:3|P(180,480)|P(240,480)|1|0;
+//LINE:3|P(210,480)|P(210,520)|1|0;
+ 矩形，颜色代码|左上角|右下角|线宽|线的样式(0为虚线,1为实线)（颜色：0灭灯,1红,2绿,3白,4黄,5红闪,6绿闪,7白闪,8黄闪,9蓝）
+  RectanglePoint:3|P(530,410)|P(1110,520)|1|1;
+  RectanglePoint:3|P(460,1035)|P(1280,1160)|1|1;
+  RectanglePoint:3|P(1290,1035)|P(2090,1280)|1|1;
+//RectanglePoint:3|P(10,70)|P(330,200)|1|1;
+//RectanglePoint:3|P(10,640)|P(320,760)|1|1;
+//RectanglePoint:3|P(1520,70)|P(1845,200)|1|1;
+//RectanglePoint:3|P(1990,100)|P(2315,230)|1|1;
+//RectanglePoint:3|P(1520,460)|P(1845,580)|1|1;
+//RectanglePoint:3|P(1990,640)|P(2315,770)|1|1;
+//RectanglePoint:3|P(10,770)|P(890,880)|1|1;
+//RectanglePoint:3|P(1140,770)|P(1890,880)|1|1;
+//心轨尖轨//基准坐标|换行个数|第二行的样式:0文字在下1文字在上|换行后0左侧1右侧
+DCBTNDISPLAYNAME:尖轨|心轨;//尖轨显示名称|心轨显示名称;
+LEFTDCBTNBASEPOINT:P(100,1120)|13|0|0;//左侧道岔故障按钮
+LEFTDCLIST:1JG,1XG,3JG,3XG,5JG,5XG,7JG,7XG,9JG,9XG,11JG,11XG,13JG,13XG,15JG,15XG,17JG,17XG,19JG,19XG,21JG,21XG,23JG,23XG,27JG,27XG;//（示例2JG,2XG）
+RIGHTDCBTNBASEPOINT:P(1050,1120)|13|0|0;//右侧道岔故障按钮
+RIGHTDCLIST:2JG,2XG,2AJG,2AXG,4JG,4XG,4AJG,4AXG,6JG,6XG,8JG,8XG,10JG,10XG,12JG,12XG,14JG,14XG,16JG,16XG,18JG,18XG,22JG,22XG,24JG,24XG,26JG,26XG,28JG,28XG,36JG,36XG,38JG,38XG,40JG,40XG,42JG,42XG,44JG,44XG,46JG,46XG,48JG,48XG,50JG,50XG,52JG,52XG,54JG,54XG;//（示例2JG,2XG）
+//6‰坡道定义
+QFZ6PDNUM:4;
+QFZ6PD:P(285,420)|1;//坐标|方向0左1右
+QFZ6PD:P(240,500)|1;//坐标|方向0左1右
+QFZ6PD:P(240,590)|1;//坐标|方向0左1右
+QFZ6PD:P(285,670)|1;//坐标|方向0左1右
+//可坡道解锁的列车信号机
+//CAN_PDJS_LCXHJ:SIV,SII,SI,S3;
+//股道文字:文字颜色|文字大小;//(颜色：0黑,1红,2绿,3白,4黄,5红闪,6绿闪,7白闪,8黄闪,9蓝,10灰）
+GDWord:3|12;
+//道岔文字:定位文字颜色|反位文字颜色|四开文字颜色|文字大小;//(颜色：0黑,1红,2绿,3白,4黄,5红闪,6绿闪,7白闪,8黄闪,9蓝,10灰）
+GDDCWord:2|4|1|12;
+//信号灯文字:文字颜色|文字大小;//(颜色：0黑,1红,2绿,3白,4黄,5红闪,6绿闪,7白闪,8黄闪,9蓝,10灰）
+XHDWord:3|12;
+//用户信息
+USER:user1|123;
+USER:user2|123;
+//铅封计数框启动时显示
+//文字显示中的计数器功能是否可用(默认0不可用)|初始是否显示
+CHGVISIBLEJSQ:1|1;
+//区间信号机1或低频码2显示,3信号机和低频码都显示（功能暂未实现，需联锁配合修改）,0不显示（不显示为0）（联锁也要修改一致）
+QJXHDSHOW:2;
+//安全线报警灯配置                                                                        
+AQXDCNUM:0;            //安全线道岔个数
+##AQXDC               //安全线道岔组合                                                   
+SHOWNAME:安全线报警;
+DCNODE:3;
+SHOWPOINT:P(460,330);
+SHOWTYPE:1;      //安全线在定位时是否以灭灯显示  0-不显示，直接隐藏    1-定位灭灯显示
+SHOWNAMETYPE:1;   //0-文字在指示灯上方  1-文字在指示灯下方   其他-不显示名称
+##AQXDC               //安全线道岔组合
+SHOWNAME:安全线报警;
+DCNODE:23;
+SHOWPOINT:P(1170,430);
+SHOWTYPE:1;      //安全线在定位时是否以灭灯显示  0-不显示，直接隐藏    1-定位灭灯显示
+SHOWNAMETYPE:1;   //0-文字在指示灯上方  1-文字在指示灯下方   其他-不显示名称
+//同方向接车口对应的发车口关系
+//接车口|发车口|方向车站名称
+JCK|FCK:S|SF|杭州;
+JCK|FCK:SH|SHF|杭州;
+JCK|FCK:SS|SSF|上海;
+JCK|FCK:X|XF|南京;
+JCK|FCK:XS|XSF|合肥;
+//运行图界面定义
+YXT_SCREEN_WIDTH:6500;//不起作用
+YXT_SCREEN_HIGH:1200;//不起作用
+YXT_MINITE_DISTANCE:35;//十分格距离
+YXT_STATION_DISTANCE:70;//车站间距离
+YXT_LINE_DISTANCE:55;//线路间距离
+YXT_RailwayLineCount:6;//按照下行方向定义
+RailwayLine:X|STATION|SF;
+RailwayLine:X|STATION|SHF;
+RailwayLine:X|STATION|SHF;
+RailwayLine:XS|STATION|SF;
+RailwayLine:XS|STATION|SHF;
+RailwayLine:XS|STATION|SHF;
+####

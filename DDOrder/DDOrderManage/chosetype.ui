@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ChoseType</class>
+ <widget class="QWidget" name="ChoseType">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>217</width>
+    <height>363</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>请选择类型</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>调度命令</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QRadioButton" name="radioButton">
+        <property name="text">
+         <string>调度命令</string>
+        </property>
+        <property name="checked">
+         <bool>true</bool>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>行车凭证</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="QRadioButton" name="radioButton_2">
+        <property name="text">
+         <string>路票</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_5">
+        <property name="text">
+         <string>绿色许可证</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_6">
+        <property name="text">
+         <string>红色许可证</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>调车作业</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="text">
+         <string>调车作业单</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="title">
+      <string>书面通知</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="QRadioButton" name="radioButton_4">
+        <property name="text">
+         <string>书面通知</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_7">
+        <property name="text">
+         <string>半自动闭塞发车进路通知书</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+      <item>
+       <widget class="QRadioButton" name="radioButton_8">
+        <property name="text">
+         <string>自动站间闭塞发车进路通知书</string>
+        </property>
+        <attribute name="buttonGroup">
+         <string notr="true">buttonGroup</string>
+        </attribute>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string>确定</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string>取消</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup"/>
+ </buttongroups>
+</ui>
